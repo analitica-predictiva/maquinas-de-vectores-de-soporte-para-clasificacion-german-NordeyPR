@@ -201,7 +201,7 @@ def pregunta_03():
     # Importe OneHotEncoder
     # Importe Pipeline
     from sklearn.pipeline import Pipeline
-    from sklearn import svm
+    from sklearn.svm import SVC
     from sklearn.preprocessing import OneHotEncoder
     from sklearn.compose import ColumnTransformer
 
@@ -223,7 +223,7 @@ def pregunta_03():
     pipeline = Pipeline(
         steps=[
             ("Transformer",columnTransformer ),
-            ("SVC", svm),
+            ("SVC", SVC()),
         ],
     )
 
