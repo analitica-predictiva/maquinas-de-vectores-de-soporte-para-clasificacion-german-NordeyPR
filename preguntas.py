@@ -204,6 +204,7 @@ def pregunta_03():
     from sklearn.svm import SVC
     from sklearn.preprocessing import OneHotEncoder
     from sklearn.compose import ColumnTransformer
+    from sklearn.compose import make_column_transformer
 
     # Cargue las variables.
     X_train,X_test, y_train, y_test = pregunta_02()
